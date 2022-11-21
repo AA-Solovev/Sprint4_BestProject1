@@ -23,7 +23,7 @@ public class ClickOnArrowAndCheckText {
     }
 
 
-    //тесты для проверки текста после нажатия на стрелочки
+    //тесты для проверки текста после нажатия на стрелочкии
     @Test
     public void checkQuestions1(){
 
@@ -33,7 +33,7 @@ public class ClickOnArrowAndCheckText {
         objHomePage.clickOnFirstButtonWithQuestion();
         String actualQuestionText = objHomePage.textPannelFirst();
         String expectedQuestionText = "Сутки — 400 рублей. Оплата курьеру — наличными или картой.";
-        MatcherAssert.assertThat(actualQuestionText, is(expectedQuestionText));
+        MatcherAssert.assertThat(actualQuestionText,  is(expectedQuestionText));
 
     }
 
@@ -131,8 +131,8 @@ public class ClickOnArrowAndCheckText {
 
     @After
     public void teardown() {
-        // Закрытие браузер
-//        driver.quit();
+//         Закрытие браузер
+        driver.quit();
     }
 
 
